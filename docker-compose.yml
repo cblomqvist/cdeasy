@@ -8,5 +8,5 @@ services:
     tty: true
     privileged: true
     volumes:
-      - ./docker/jenkins/seed.groovy:/usr/share/jenkins/ref/init.groovy.d/seed.groovy:ro
+      - ./docker/jenkins/seed.groovy:/usr/share/jenkins/ref/init.groovy.d:ro
       - .:/var/jenkins_home/workspace/seed:ro
